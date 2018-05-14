@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('/static/fonts/Caviar_Dreams.ttf');
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body{
+    height: 100%;
+    max-height: 100%;
+    background-color: #edeef0;
+}
+
+.topline {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 55px;
+    background-size: 100%;
+    display: flex;
+}
+
+.oirad-logo {
+    height: 55px;
+    background-size: 100%;
+    width: 110px;
+    background-color: #2c2a2b;
+
+}
+.topline-color1 {
+    background-color: #3a3b3d;
+}
+
+.topline-color2 {
+    background-color: #2c2a2b;
+    flex-direction: row-reverse;
+}
+
+.topline-back {
+    height: 55px;
+    flex-grow: 1;
+    background-size: 100%;
+    display: flex;
+}
+
+.topline-icon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 45px;
+    background-size: 100%;
+    filter: invert(1);
+}
+.topline-icon:hover {
+    filter: invert(0.5);
+}
+
+.topline-item {
+    height: 55px;
+    width: 120px;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+    background-size: 100%;
+    margin-left: 30px;
+    color: white;
+}
+.topline-item:hover {
+    background-color: lightgrey;
+    color: black;
+    text-decoration: none;
+}
+
+.user-item {
+    width: 160px;
+}
+
+.cart {
+    margin-left: 100px;
+}
+
+
+.section-top {
+    height: 500px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+    background-size: 100%;
+    background-color: #55e073;
+}
+.scrolling-line-frames {
+    padding-top: 33.5%;
+    position: relative;
+    width: 100%;
+}
+
+.scrolling-line {
+    transition: 400ms;
+    width: 300%;
+    height: 100%;
+    background-size: 100%;
+    background-color: #5b80b2;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+.scrolling-line-article {
+    width: 33.333%;
+    background-size: 100%;
+    height: 100%;
+}
+
+.scrolling-line-header {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 10%;
+}
+
+.wrapper{
+    min-height: 100%;
+}
+
+.wrapper-content{
+    overflow: auto;
+    padding-bottom: 180px; /* must be same height as the footer */
+}
+
+.footer{
+    position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear: both;
+    background-color: white;
+}
+
+.product-description-tabs{
+    padding: 10px;
+}
+
+.section{
+    padding: 50px 0;
+}
+
+.section h1{
+    margin-bottom: 40px;
+}
+
+.product-item{
+    height: 360px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    position: relative;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.add-to-card-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.discount-container{
+    position: absolute;
+    top: 30%;
+    background: #55e073;
+    width: 30%;
+    color: white;
+    font-weight: 700;
+    padding: 3px;
+}
+
+.section-delivery{
+    height: 300px;
+    background-color: darkseagreen;
+    text-align: center;
+    color: white;
+}
+
+.product-image-item{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.basket-container{
+    position: relative;
+    width: 400px;
+    padding: 15px 10px;
+}
+
+.basket-items{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: #55e093;
+    z-index: 10;
+    padding: 10px;
+}
+
+.form-error{
+    color: red;
+}
+
+@media screen and (max-width: 1500px) {
+    .scrolling-line-header {
+        margin-top: 14%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section-top {
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .category {
+        display: none;
+    }
+
+    .cart {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .user-item {
+        display: none;
+    }
+
+    .section-top {
+        height: 300px;
+    }
+    .scrolling-line-article {
+        background-size: cover;
+    }
+    .scrolling-line-header {
+        margin-top: 34%;
+        font-size: 20px;
+    }
+
+}
